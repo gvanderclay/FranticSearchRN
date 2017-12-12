@@ -1,6 +1,6 @@
 // @flow
 import * as React from "react";
-import { TextInput } from "react-native";
+import { SearchBar } from "react-native-elements";
 import style from "./style";
 
 type Props = {
@@ -12,11 +12,12 @@ export class PureSearchBox extends React.Component<Props, {}> {
   render() {
     const { setSearch, searchTerm } = this.props;
     return (
-      <TextInput
+      <SearchBar
         placeholder="Search"
         style={style.main}
         onChangeText={setSearch}
         value={searchTerm}
+        lightTheme={true}
       />
     );
   }
