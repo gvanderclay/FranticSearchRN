@@ -1,9 +1,14 @@
+// @flow
 import * as React from "react";
 import { TextInput } from "react-native";
 import style from "./style";
-import PropTypes from "prop-types";
 
-export class PureSearchBox extends React.Component {
+type Props = {
+  setSearch: () => void,
+  searchTerm: string
+};
+
+export class PureSearchBox extends React.Component<Props, {}> {
   render() {
     const { setSearch, searchTerm } = this.props;
     return (
@@ -16,8 +21,3 @@ export class PureSearchBox extends React.Component {
     );
   }
 }
-
-PureSearchBox.PropTypes = {
-  setSearch: PropTypes.func.isRequired,
-  searchTerm: PropTypes.string.isRequired
-};
