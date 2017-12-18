@@ -14,3 +14,6 @@ export default StorybookUI;
 
 import "./components/Button/button.stories";
 import "./components/PureSearchBox/pure-search-box.stories";
+import "./components/PureSearchListItem/pure-search-list-item.stories";
+import "./components/PureSearchList/pure-search-list.stories";
+import "./components/PureSearchPage/pure-search-page.stories";
