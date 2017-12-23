@@ -6,13 +6,12 @@ import {
   PureSearchListItem
 } from "../PureSearchListItem";
 
-type Props = {
-  items: Array<ListItemProps>
-};
+// type Props = {
+//   items: Array<ListItemProps>
+// };
 
-export class PureSearchList extends React.Component<Props> {
+export class PureSearchList extends React.Component {
   render() {
-    console.log(typeof this.props.items);
     return (
       <ScrollView>
         <List>
