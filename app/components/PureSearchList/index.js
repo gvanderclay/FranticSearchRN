@@ -16,7 +16,6 @@ export class PureSearchList extends React.Component {
       <ScrollView>
         <List>
           {this.props.items.map(item => {
-            console.log(item);
             return <PureSearchListItem text={item.text} />;
           })}
         </List>
